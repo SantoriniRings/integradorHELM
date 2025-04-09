@@ -22,7 +22,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USER}}
           password: ${{ secrets.DOCKERHUB_TOkEN}}
       
-          
+
       - name: Build and Push Image
         uses: docker/build-push-action@v5
         with:
@@ -31,6 +31,6 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USER}}/integrador-tungtungtungsahur:latest
-            ${{ secrets.DOCKERHUB_TOKEN}}/integrador:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USER}}/integrador:${{ github.sha }}
 
       
