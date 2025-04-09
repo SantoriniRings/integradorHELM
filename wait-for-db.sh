@@ -1,6 +1,3 @@
-#!/bin/sh
-
-# Esperar a que la base de datos esté disponible
 echo "Esperando a que la base de datos esté lista..."
 
 while ! nc -z db 5432; do

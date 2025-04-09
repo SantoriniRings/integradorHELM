@@ -4,7 +4,6 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     netcat-traditional \
-    # Aquí puedes añadir otras dependencias de sistema si las necesitas
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
